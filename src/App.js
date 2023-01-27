@@ -1,10 +1,12 @@
 import './App.css';
-import { useGameContext } from './context/GameContext.js';
+import Board from './component/gameboard/Board.js';
 
 function App() {
-  const { currentPlayer } = useGameContext();
-  console.log(currentPlayer);
-  return <div></div>;
+  return (
+    <div>
+      <Board />
+    </div>
+  );
 }
 
 export default App;
