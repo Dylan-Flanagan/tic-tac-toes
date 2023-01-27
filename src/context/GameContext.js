@@ -38,4 +38,8 @@ const useGameContext = () => {
   return context;
 };
 
-export { GameProvider, useGameContext };
+const handleBoxClick = () => {
+  console.log('Clicked a box!');
+};
+
+export { GameProvider, useGameContext, handleBoxClick };
